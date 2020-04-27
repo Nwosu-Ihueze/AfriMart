@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="Rosemary Nwosu-Ihueze">
 
-<title>AfriMart</title>
+<title>Afrimart</title>
 
 <!-- jQuery -->
 <script src="js/jquery-2.0.0.min.js" type="text/javascript"></script>
@@ -15,7 +15,7 @@
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
 
 <!-- Font awesome 5 -->
-<link href="../fonts/fontawesome/css/all.min.css" type="text/css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/c044b67e69.js" crossorigin="anonymous"></script>
 
 <!-- custom style -->
 <link href="css/ui.css" rel="stylesheet" type="text/css"/>
@@ -61,49 +61,68 @@
 
 <section class="header-main border-bottom">
 	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-lg-3 col-4">
-				<a href="#" class="brand-wrap">
-					<img class="logo" src="images/banners/cover.png">
-				</a> <!-- brand-wrap.// -->
+<div class="row align-items-center">
+	<div class="col-lg-2 col-md-3 col-6">
+		<a href="index.html" class="brand-wrap">
+			<img class="logo" src="images/banners/cover.png">
+		</a> <!-- brand-wrap.// -->
+	</div>
+	<div class="col-lg col-sm col-md col-6 flex-grow-0">
+		<div class="category-wrap dropdown d-inline-block float-md-right">
+			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> 
+				<i class="fa fa-bars"></i> All category 
+			</button>
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="raw.html">Protein </a>
+				<a class="dropdown-item" href="raw.html">Grains </a>
+				<a class="dropdown-item" href="fresh.html">Produce</a>
+				<a class="dropdown-item" href="fresh.html">Vegetable </a>
+				<a class="dropdown-item" href="misc.html">Oil </a>
+				<a class="dropdown-item" href="misc.html">Condiments </a> 
 			</div>
-			<div class="col-lg-6 col-sm-12 order-3 order-lg-2">
-				<form action="#" class="search">
-					<div class="input-group w-100">
-						<select class="custom-select"  name="category_name">
-								<option value="">All type</option><option value="codex">Special</option>
-								<option value="comments">Only best</option>
-								<option value="content">Latest</option>
-						</select>
-					    <input type="text" class="form-control" style="width:60%;" placeholder="Search">
-					    
-					    <div class="input-group-append">
-					      <button class="btn btn-primary" type="submit">
-					        <i class="fa fa-search"></i>
-					      </button>
-					    </div>
-				    </div>
-				</form> <!-- search-wrap .end// -->
+		</div>  <!-- category-wrap.// -->
 	</div> <!-- col.// -->
-</div> <!-- col.// -->
-<div class="col-lg-3 col-sm-6 col-8 order-2 order-lg-3">
-	<div class="d-flex justify-content-end">
-		<div class="widget-header">
-			<small class="title text-muted">Welcome guest!</small>
-			<div> 
-				<a href="Login.html">Sign in</a> <span class="dark-transp"> | </span>
-				<a href="Login.html"> Register</a>
-			</div>
-		</div>
-		<a href="Shopping cart.html" class="widget-header pl-3 ml-3">
-			<div class="icon icon-sm rounded-circle border"><i class="fa fa-shopping-cart"></i></div>
-			<span class="badge badge-pill badge-danger notify">0</span>
-		</a>
-	</div> <!-- widgets-wrap.// -->
-</div> <!-- col.// -->
+	<div class="col-lg  col-md-6 col-sm-12 col">
+		<form action="#" class="search">
+			<div class="input-group w-100">
+			    <input type="text" class="form-control" style="width:60%;" placeholder="Search">
+			    <select class="custom-select"  name="category_name">
+						<option value="">All type</option><option value="codex">Special</option>
+						<option value="comments">Only best</option>
+						<option value="content">Latest</option>
+				</select>
+			    <div class="input-group-append">
+			      <button class="btn btn-primary" type="submit">
+			        <i class="fa fa-search"></i>
+			      </button>
+			    </div>
+		    </div>
+		</form> <!-- search-wrap .end// -->
+	</div> <!-- col.// -->
+	<div class="col-lg-3 col-sm-12 col-md-12 col-12">
+		<div class="d-flex justify-content-md-end widgets-wrap">
+			<a href="user.html" class="widget-header">
+				<div class="icontext">
+					<div class="icon icon-sm border rounded-circle">
+						<i class="fa  fa-user"></i>
+					</div>
+					<div class="text">
+						<div>
+                            <a href="login.html">Sign in | Join </a>
+                        </div>
+						<div>
+                            <a href="user.html">My account</a></div>
+				</div>
+			<a href="shopping cart.html" class="widget-header ml-4">
+				<div class="icon icon-sm border rounded-circle"><i class="fa fa-shopping-cart"></i></div>
+				<span class="badge badge-pill badge-danger notify">0</span>
+			</a>
+		</div> <!-- widgets-wrap.// -->
+	</div> <!-- col.// -->
 </div> <!-- row.// -->
-</div> <!-- container.// -->
+	</div> <!-- container.// -->
 </section> <!-- header-main .// -->
+
 
 <nav class="navbar navbar-main navbar-expand-lg border-bottom">
   <div class="container">
@@ -112,28 +131,33 @@
     </button>
     <div class="collapse navbar-collapse" id="main_nav4">
       <ul class="navbar-nav">
-          <a class="nav-link" href="Raw.html">Protein</a>
+        <li class="nav-item">
+          <a class="nav-link pl-0" href="#"> <strong>All category</strong></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Raw.html">Grains</a>
+          <a class="nav-link" href="raw.html">Protein</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Fresh.html">Vegetable</a>
+          <a class="nav-link" href="raw.html">Grains</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Misc.html">Oil</a>
+          <a class="nav-link" href="fresh.html">Vegetable</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="misc.html">Oil</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="Fresh.html">Produce</a>
-            <a class="dropdown-item" href="Misc.html">Condiments</a>
+            <a class="dropdown-item" href="fresh.html">Produce</a>
+            <a class="dropdown-item" href="misc.html">Condiments</a>
           </div>
         </li>
       </ul>
     </div> <!-- collapse .// -->
   </div> <!-- container .// -->
 </nav> <!-- navbar main end.// -->
+
 
 </header> <!-- section-header.// -->
     <section class="section-content padding-y bg">
@@ -419,8 +443,8 @@
 </div> <!-- row.// -->
 
 <br>
-<!-- ========================= FOOTER ========================= -->
-<footer class="section-footer border-top">
+  <!-- ========================= FOOTER ========================= -->
+  <footer class="section-footer border-top">
 	<div class="container">
 		<section class="footer-top padding-y">
 			<div class="row">
@@ -428,15 +452,12 @@
 					<article class="mr-3">
 						<img src="images/banners/cover.png"  class="logo-footer">
 						<p class="mt-3">Africa's number one food hub.</p>
-						<aside class="col-md">
-							<h6 class="title">Social</h6>
-							<ul class="list-unstyled">
-								<li><a href="#"> <i class="fab fa-facebook"></i> Facebook </a></li>
-								<li><a href="#"> <i class="fab fa-twitter"></i> Twitter </a></li>
-								<li><a href="#"> <i class="fab fa-instagram"></i> Instagram </a></li>
-								<li><a href="#"> <i class="fab fa-youtube"></i> Youtube </a></li>
-							</ul>
-						</aside>
+						<div>
+						    <a class="btn btn-icon btn-light" title="Facebook" target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>
+						    <a class="btn btn-icon btn-light" title="Instagram" target="_blank" href="#"><i class="fab fa-instagram"></i></a>
+						    <a class="btn btn-icon btn-light" title="Youtube" target="_blank" href="#"><i class="fab fa-youtube"></i></a>
+						    <a class="btn btn-icon btn-light" title="Twitter" target="_blank" href="#"><i class="fab fa-twitter"></i></a>
+						</div>
 					</article>
 				</aside>
 				<aside class="col-sm-3 col-md-2">
@@ -457,10 +478,10 @@
 				<aside class="col-sm-3  col-md-2">
 					<h6 class="title">For users</h6>
 					<ul class="list-unstyled">
-						<li> <a href="Login.html"> Login </a></li>
-						<li> <a href="Login.html"> Register </a></li>
+						<li> <a href="login.html"> Login </a></li>
+						<li> <a href="login.html"> Register </a></li>
 						<li> <a href="#"> Account Setting </a></li>
-						<li> <a href="#"> My Orders </a></li>
+						<li> <a href="shopping cart.html"> My Orders </a></li>
 						<li> <a href="#"> My Wishlist </a></li>
 					</ul>
 				</aside>
@@ -483,6 +504,6 @@
 </footer>
 <!-- ========================= FOOTER END // ========================= -->
 
-    </section>
     </body>
 </html>
+    
